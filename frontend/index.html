@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NorthStar</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header id="top">
+
+            <h1>
+                <a href="#top" class="logo">
+                    ★ NorthStar
+                </a>
+            </h1>
+
+            <h2>Trading Card Collection & Deck Manager</h2>
+
+            <nav>
+                <a href="#inventory">🃏 Inventory</a>
+                <a href="#deckBuilder">🛠 Deck Builder</a>
+                <a href="#orders">📦 Orders</a>
+                <a href="#statistics">📈 Statistics</a>
+                <a href="#recommendations">✨ Recommendations</a>
+            </nav>
+
+        </header>
+
+        <main>
+
+            <section id="inventory" class="card-section">
+
+                <h3>Add New Card</h3>
+
+                <form id="addCardForm">
+
+                    <label for="cardName">Card Name</label>
+                    <input type="text" id="cardName" required>
+
+                    <label for="cardType">Card Type</label>
+                    <input
+                        type="text"
+                        id="cardType"
+                        placeholder="Creature, Instant, Sorcery..."
+                        required
+                    >
+
+                    <label for="colorIdentity">Color Identity</label>
+                    <input
+                        type="text"
+                        id="colorIdentity"
+                        placeholder="Green, Blue, Black..."
+                        required
+                    >
+
+                    <label for="quantityOwned">Quantity Owned</label>
+                    <input
+                        type="number"
+                        id="quantityOwned"
+                        min="0"
+                        required
+                    >
+
+                    <label for="quantityAvailable">Quantity Available</label>
+                    <input
+                        type="number"
+                        id="quantityAvailable"
+                        min="0"
+                        required
+                    >
+
+                    <label for="marketValue">Market Value ($)</label>
+                    <input
+                        type="number"
+                        id="marketValue"
+                        step="0.01"
+                        min="0"
+                        required
+                    >
+
+                    <button type="submit">
+                        Add Card
+                    </button>
+
+                </form>
+
+            </section>
+
+            <section class="search-section">
+
+                <h3>Inventory</h3>
+
+                <div class="stats-box">
+                    <p id="totalCards">0 Cards</p>
+                    <p id="totalValue">Estimated Collection Value: $0.00</p>
+                </div>
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search cards..."
+                >
+
+                <p id="message"></p>
+
+            </section>
+
+            <div id="cardList"></div>
+
+            <section id="deckBuilder" class="coming-soon">
+
+                <h3>🛠 Deck Builder</h3>
+
+                <p>
+                    Build Commander, Modern, Pioneer, Standard and
+                    casual decks directly from your collection.
+                </p>
+
+                <button
+                    type="button"
+                    class="beta-button"
+                    onclick="alert('Deck Builder is currently under development and will be available in NorthStar Version 1.0.')">
+                    In Development
+                </button>
+
+            </section>
+
+            <section id="orders" class="coming-soon">
+
+                <h3>📦 Orders</h3>
+
+                <p>
+                    Track purchases, shipments, sellers,
+                    and cards waiting to be added to your inventory.
+                </p>
+
+                <button
+                    type="button"
+                    class="beta-button"
+                    onclick="alert('Orders is currently under development and will be available in NorthStar Version 1.0.')">
+                    In Development
+                </button>
+
+            </section>
+
+            <section id="statistics" class="coming-soon">
+
+                <h3>📈 Statistics</h3>
+
+                <p>
+                    View collection value, card counts,
+                    color distribution, deck trends,
+                    and collection growth over time.
+                </p>
+
+                <button
+                    type="button"
+                    class="beta-button"
+                    onclick="alert('Statistics is currently under development and will be available in NorthStar Version 1.0.')">
+                    In Development
+                </button>
+
+            </section>
+
+            <section id="recommendations" class="coming-soon">
+
+                <h3>✨ Recommendations</h3>
+
+                <p>
+                    Receive intelligent card recommendations
+                    based on your collection,
+                    favorite formats,
+                    and current decks.
+                </p>
+
+                <button
+                    type="button"
+                    class="beta-button"
+                    onclick="alert('Recommendations is currently under development and will be available in NorthStar Version 1.0.')">
+                    In Development
+                </button>
+
+            </section>
+
+        </main>
+
+        <footer class="footer">
+
+            <hr>
+
+            <h3>★ NorthStar</h3>
+
+            <p>Trading Card Collection & Deck Manager</p>
+
+            <p>Version 0.9 Beta</p>
+
+            <p>Built by Jesse Sherk</p>
+
+            <p>Excelsior University</p>
+
+            <p>IT370 Database Management Systems</p>
+
+            <p>© 2026 NorthStar</p>
+
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
